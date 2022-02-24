@@ -15,11 +15,21 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div>
-      {chats.map((chat) => (
-        <div key={chat._id}>{chat.chatName}</div>
-      ))}
-    </div>
+    <>
+      <div>
+        {chats.map((chat) => (
+          <div key={chat._id}>{chat.chatName}</div>
+        ))}
+      </div>
+      <div className="credits">
+        <div>
+          Freebie made by{" "}
+          <a href="https://www.frebers.com/" title="Frebers">
+            www.frebers.com
+          </a>
+        </div>
+      </div>
+    </>
   );
 };
 
