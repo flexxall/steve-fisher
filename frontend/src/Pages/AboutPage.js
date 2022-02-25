@@ -1,34 +1,34 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const AboutPage = () => {
-  const [chats, setChats] = useState([]);
-
-  const fetchChats = async () => {
-    const { data } = await axios.get("/api/chat");
-
-    setChats(data);
-  };
-
-  useEffect(() => {
-    fetchChats();
-  }, []);
-
   return (
     <>
-      <div>
-        {chats.map((chat) => (
-          <div key={chat._id}>{chat.chatName}</div>
-        ))}
-      </div>
-      <div className="credits">
-        <div>
-          Freebie made by{" "}
-          <a href="https://www.frebers.com/" title="Frebers">
-            www.frebers.com
-          </a>
-        </div>
-      </div>
+      <Container>
+        <Row className="pt-4 col-12">
+          <Col className="text-start">
+            <Link
+              to="/"
+              style={{ color: "antiquewhite" }}
+              className="myfont-small"
+            >
+              Home
+            </Link>
+          </Col>
+          <Col className="text-end">
+            <Link
+              to="/projects"
+              style={{ color: "antiquewhite" }}
+              className="myfont-small"
+            >
+              Projects
+            </Link>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
