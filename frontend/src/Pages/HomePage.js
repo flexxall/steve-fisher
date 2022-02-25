@@ -4,10 +4,18 @@ import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 
 const HomePage = () => {
+
+  const getResume = (e) => {
+    e.preventDefault()
+    window.open("/files/Steve_Fisher_Resume.pdf")
+  }
+
   return (
     <>
       <Row className="col-sm-4 col-md-3 col-lg-2 mx-5 my-4 float-end">
-        <button className="btn btn-outline-info">Download Resume</button>
+        <Link to="route"
+          onClick={getResume}>
+        <button className="btn btn-outline-info">Download Resume</button></Link>
       </Row>
       <Row className="mx-auto col-12">
         <Image

@@ -41,11 +41,12 @@ const ProjectsPage = () => {
             </Link>
           </Col>
         </Row>
+        
         <Row>
           <Col>
             <Card
-              style={{ width: "25rem" }}
-              className="mx-auto mt-5 rounded-2 align-items-center"
+              
+              className="mx-auto rounded-2 align-items-center"
             >
               <div style={{ cursor: "pointer" }} onClick={issueTracker}>
                 <Card.Img
@@ -62,8 +63,8 @@ const ProjectsPage = () => {
           </Col>
           <Col>
             <Card
-              style={{ width: "25rem" }}
-              className="mx-auto mt-5 rounded-2 align-items-center"
+              
+              className="mx-auto rounded-2 align-items-center"
             >
               <div style={{ cursor: "pointer" }} onClick={reduxTodo}>
                 <Card.Img
@@ -77,13 +78,10 @@ const ProjectsPage = () => {
                 <Card.Text>Simple Todo List with Redux</Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
+          </Col><Col>
             <Card
-              style={{ width: "25rem" }}
-              className="mx-auto mt-5 rounded-2 align-items-center"
+              
+              className="mx-auto rounded-2 align-items-center"
             >
               <div style={{ cursor: "pointer" }} onClick={shoppingCart}>
                 <Card.Img
@@ -103,8 +101,8 @@ const ProjectsPage = () => {
           </Col>
           <Col>
             <Card
-              style={{ width: "25rem" }}
-              className="mx-auto mt-5 rounded-2 align-items-center"
+              
+              className="mx-auto rounded-2 align-items-center"
             >
               <div style={{ cursor: "pointer" }} onClick={issueTracker}>
                 <Card.Img
@@ -124,6 +122,52 @@ const ProjectsPage = () => {
             </Card>
           </Col>
         </Row>
+
+        {/* <Row>
+          <Col>
+            <Card
+              style={{ width: "20rem" }}
+              className="mx-auto rounded-2 align-items-center"
+            >
+              <div style={{ cursor: "pointer" }} onClick={shoppingCart}>
+                <Card.Img
+                  src="/images/logo.png"
+                  className="card-img-top"
+                  alt="Something"
+                />
+              </div>
+              <Card.Body>
+                <Card.Title>Shopping Cart</Card.Title>
+                <Card.Text>
+                  Shopping Cart featuring Search and filter by price, ratings,
+                  stock and delivery
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card
+              style={{ width: "20rem" }}
+              className="mx-auto rounded-2 align-items-center"
+            >
+              <div style={{ cursor: "pointer" }} onClick={issueTracker}>
+                <Card.Img
+                  src="/images/logo.png"
+                  className="card-img-top"
+                  alt="Something"
+                />
+              </div>
+              <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row> */}
       </Container>
     </>
   );
